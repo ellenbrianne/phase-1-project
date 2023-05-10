@@ -1,0 +1,42 @@
+body {
+    background: rgb(245, 245, 245);
+}
+
+.headers {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.initial-list {
+    padding-top: 200px;
+    text-align: left;
+}
+
+#form-placeholder {
+    text-align: left;
+    display: block;
+    width: 200px;
+}
+
+.ranks {
+    padding-left: 500px;
+}
+
+table {
+    width: 900px;
+}
+
+table, th, td {
+    border-radius: 10px;
+    border: 2px solid lightblue;
+}
+
+th {
+    padding-top: 5px;
+    font-size: xx-large;
+}
+
+td {
+    padding-top: 100px;
+    padding-left: 40px;
+    text-align: center;
+}
