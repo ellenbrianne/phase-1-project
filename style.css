@@ -7,13 +7,10 @@ body {
 }
 
 .initial-list {
-    padding-top: 200px;
-    text-align: center;
-}
-
-#form-placeholder {
+    padding-top: 100px;
     text-align: left;
-    display: block;
-    width: 200px;
 }
 
+.prompts {
+    padding-top: 100px;
+}
