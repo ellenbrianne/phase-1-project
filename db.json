@@ -1,8 +1,46 @@
 {
-	"activity": "Learn how to play a new sport",
-	"accessibility": 0.2,
-	"type": "recreational",
-	"participants": 1,
-	"price": 0.1,
-	"key": "5808228"
+	"habits": 
+	[
+		{	
+			"id": 1,
+			"activity": "Go for a run.",
+			"type": "exercise",
+			"difficulty": 1
+		},
+		
+		{
+			"id": 2,
+			"activity": "Read for 20 minutes.",	
+			"type": "education",
+			"difficulty": 3
+		},
+		
+		{
+			"id": 3,
+			"activity": "Journal for 10 minutes.",
+			"type": "self-help",
+			"difficulty": 2
+		},
+		
+		{
+			"id": 4,
+			"activity": "Watch an educational Youtube video on something that interests you.",
+			"type": "education",
+			"difficulty": 3
+		},
+		
+		{
+			"id": 5,
+			"activity": "Take a cold shower",
+			"type": "self-help",
+			"difficulty": 2
+		},
+		
+		{
+			"id": 6,
+			"activity": "Weight train for 30 minutes",
+			"type": "exercise",
+			"difficulty": 1
+		}
+	]
 }
