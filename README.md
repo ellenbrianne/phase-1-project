@@ -13,3 +13,10 @@ json-server --watch db.json
 ```
 
 in your terminal when inside app's directory.
+
+## Description
+
+This app will prompt you to list your current daily habits and rank them according to the effort they require to maintain.
+With the goal of exploring new habits and/or replacing harmful ones, the user is then given several new habit options from the local database. 
+
+After the user has had time to review these options, they are finally prompted to create a new list comprised of current habits they'd like to keep and the new ones they chose from. This list is meant to be re-evaluated weekly for consistency.
