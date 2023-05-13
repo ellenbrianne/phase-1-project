@@ -6,11 +6,28 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
+#hide {
+    visibility: hidden;
+}
+
 .initial-list {
     padding-top: 100px;
     text-align: left;
 }
 
+#prompt-area {
+    padding-top: 50px;
+}
+
+#prompt-description {
+    display: block;
+    text-align: left;
+    width: 200px;
+}
+
 .prompts {
+    display: flex;
     padding-top: 100px;
+    justify-content: space-between;
+    justify-content: space-around;
 }
