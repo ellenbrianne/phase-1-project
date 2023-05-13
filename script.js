@@ -4,9 +4,8 @@ form1.addEventListener("submit", (e) => {
     e.preventDefault()
     let input = form1.querySelector("#habit").value
     let newItem = document.createElement("li")
-    let list = document.querySelector("ul")
+    let list = document.querySelector("ul").appendChild(newItem)
     newItem.textContent = input
-    list.appendChild(newItem)
     
     form1.reset()
 })
