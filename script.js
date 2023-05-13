@@ -66,6 +66,8 @@ promptBtn.addEventListener("click", (e) => {
         lastOne.textContent = input
         let ul = document.createElement("ul").appendChild(lastOne)
         let finalArea = document.getElementById("final").appendChild(ul)
+
+        finalForm.reset()
    })
 })
 
