@@ -4,7 +4,7 @@ title.addEventListener("mouseenter", (e) => {
     hidden.id = ""
     setTimeout(() => {
         hidden.id = "hide"
-    }, 2000)
+    }, 1000)
 })
 
 const form1 = document.getElementById("text-input")
@@ -45,6 +45,28 @@ function renderCard (habit) {
 let promptBtn = document.getElementById("prompt-button")
 promptBtn.addEventListener("click", (e) => {
    getHabits() 
+
+   let finalList = document.getElementById("final")
+   let finalForm = document.createElement("form")
+   finalForm.id = "final-form"
+   finalList.appendChild(finalForm)
+   finalForm.innerHTML = `
+    <p id="closing">Finally, create a new list with your previous habits you'd like to save, and include whichever replacements you chose. Don't exceed 6 total, and try to keep to 2 habits from each difficulty level. :)</p>
+    <input 
+        type="text" 
+        id="last"
+        name="last"
+    </input>
+    <input type="submit" value="List Final Habits">
+   `
+   finalForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+        let input = finalForm.querySelector("#last").value
+        let lastOne = document.createElement("li")
+        lastOne.textContent = input
+        let ul = document.createElement("ul").appendChild(lastOne)
+        let finalArea = document.getElementById("final").appendChild(ul)
+   })
 })
 
 function getHabits () {

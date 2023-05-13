@@ -31,3 +31,7 @@ body {
     justify-content: space-between;
     justify-content: space-around;
 }
+
+li {
+    padding-top: 10px;
+}
