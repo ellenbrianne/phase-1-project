@@ -1,5 +1,5 @@
-let title = document.getElementById("title")
-let hidden = document.getElementById("hide")
+const title = document.getElementById("title")
+const hidden = document.getElementById("hide")
 title.addEventListener("mouseenter", (e) => {
     hidden.id = ""
     setTimeout(() => {
@@ -11,9 +11,9 @@ const form1 = document.getElementById("text-input")
 
 form1.addEventListener("submit", (e) => {
     e.preventDefault()
-    let input = form1.querySelector("#habit").value
-    let newItem = document.createElement("li")
-    let list = document.querySelector("ul").appendChild(newItem)
+    const input = form1.querySelector("#habit").value
+    const newItem = document.createElement("li")
+    const list = document.querySelector("ul").appendChild(newItem)
     newItem.innerHTML = `
         ${input}
         <select name="rank" id="drop-btn">
@@ -42,12 +42,12 @@ function renderCard (habit) {
     document.querySelector(".prompts").appendChild(card)
 }
 
-let promptBtn = document.getElementById("prompt-button")
+const promptBtn = document.getElementById("prompt-button")
 promptBtn.addEventListener("click", (e) => {
    getHabits() 
 
-   let finalList = document.getElementById("final")
-   let finalForm = document.createElement("form")
+   const finalList = document.getElementById("final")
+   const finalForm = document.createElement("form")
    finalForm.id = "final-form"
    finalList.appendChild(finalForm)
    finalForm.innerHTML = `
@@ -61,11 +61,11 @@ promptBtn.addEventListener("click", (e) => {
    `
    finalForm.addEventListener("submit", (e) => {
     e.preventDefault()
-        let input = finalForm.querySelector("#last").value
-        let lastOne = document.createElement("li")
+        const input = finalForm.querySelector("#last").value
+        const lastOne = document.createElement("li")
         lastOne.textContent = input
-        let ul = document.createElement("ul").appendChild(lastOne)
-        let finalArea = document.getElementById("final").appendChild(ul)
+        const ul = document.createElement("ul").appendChild(lastOne)
+        const finalArea = document.getElementById("final").appendChild(ul)
 
         finalForm.reset()
    })
