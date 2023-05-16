@@ -4,7 +4,7 @@ title.addEventListener("mouseenter", (e) => {
     hidden.id = ""
     setTimeout(() => {
         hidden.id = "hide"
-    }, 1000)
+    }, 2000)
 })
 
 const form1 = document.getElementById("text-input")
